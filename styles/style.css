@@ -1,0 +1,56 @@
+*{
+    margin:0;
+}
+body{
+    height: 100vh;
+}
+header{
+    height: 25%;
+    padding: 10px;
+    background-color: greenyellow;
+    display:grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 60% auto;
+    gap: 10px;
+}
+.divHeader{
+    background-color: aqua;
+}
+nav{
+    background-color: black;
+    color: white;
+    grid-column: 1 /span 2;
+}
+main{
+    height: 45%;
+    padding: 10px;
+    background-color: blueviolet;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section, article{
+    border: 1px black solid;
+}
+#secPrimera{
+    background-color: red;
+    height: 20%;
+}
+.secArticle{
+    height: 30%;
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+}
+.videoDiv{
+    height: 100%;
+}
+video{
+    object-fit: contain;
+    height: auto;
+}
+footer{
+    height: 30%;
+    background-color: blue;
+}
