@@ -22,7 +22,7 @@ nav{
     grid-column: 1 /span 2;
 }
 main{
-    height: 45%;
+    height: 75%;
     padding: 10px;
     background-color: blueviolet;
     display:flex;
@@ -45,10 +45,13 @@ section, article{
 }
 .videoDiv{
     height: 100%;
+    /*al ser hijo de grid hay que decirle que se puede hacer muy pequeño*/
+    min-height: 0;
+    min-width: 0;
 }
 video{
-    object-fit: contain;
-    height: auto;
+    max-height: 100%;
+    width: auto;
 }
 footer{
     height: 30%;
